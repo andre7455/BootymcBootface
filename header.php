@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head lang="nl_nNL">
     <meta charset="utf-8">
