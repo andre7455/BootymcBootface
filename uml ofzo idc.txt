@@ -1,0 +1,19 @@
+- home - niet interactief
+- product page - overzicht producten
+
+admin{
+product user huur, verhuurd, lokatie
+product admin edit, verwijder en reseveren, locatie edit
+
+gebruikers - admin ban, edit, inzien
+gebruikers zelf - edit - delete - account aanmaken
+
+havens - staan plaatsen, aanwezige boten, welk addres de boten heeft
+havens admin - haven toevoegen, verwijderen, bewerken
+
+
+}
+
+
+entiteid
+user: bank, boten aan verhuurd, 
