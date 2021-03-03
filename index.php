@@ -1,9 +1,5 @@
-<?php 
-include "header.php";
+<?php
+include "includes/header.php";
+
+include "includes/footer.php";
 ?>
-
-<html>
-
-<p>Andre is een kaasjager</p>
-
-</html>

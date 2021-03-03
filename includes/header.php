@@ -16,7 +16,7 @@
           <a class="nav-item nav-link" href="#">Features</a>
           <a class="nav-item nav-link" href="#">Pricing</a>
           <a class="nav-item nav-link" href="testpagina.php">Disabled</a>
-          <a class="nav"
+          <a class="nav">
         </div>
       </div>
     </nav>
