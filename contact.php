@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <?php
 
 include "includes\header.php";
@@ -46,3 +48,5 @@ include "includes\header.php";
 include "includes/footer.php";
 
 ?>
+
+</html>
