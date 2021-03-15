@@ -14,7 +14,6 @@ include "includes\header.php";
 </div>
 
 <br>
-</br>
 
 <div>
     <h1>Telefoonnummer</h1>
@@ -24,7 +23,6 @@ include "includes\header.php";
 </div>
 
 <br>
-</br>
 
 <div>
     <h1>Adres</h1>
@@ -34,7 +32,6 @@ include "includes\header.php";
 </div>
 
 <br>
-</br>
 
 <div>
     <h1>Namen</h1>
