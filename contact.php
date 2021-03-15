@@ -5,7 +5,7 @@ include "includes\header.php";
 ?>
 
 <div>
-    <h1>Eamil</h1>
+    <h1>Email</h1>
         <p>marco@boatymcboatface.com</p>
         <p>andre@boatymcboatface.com</p>
         <p>sam@boatymcboatface.com</p>
