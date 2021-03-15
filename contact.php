@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <?php
 
 include "includes\header.php";
@@ -5,11 +7,13 @@ include "includes\header.php";
 ?>
 
 <div>
-    <h1>Eamil</h1>
+    <h1>Email</h1>
         <p>marco@boatymcboatface.com</p>
         <p>andre@boatymcboatface.com</p>
         <p>sam@boatymcboatface.com</p>
 </div>
+
+<br>
 
 <div>
     <h1>Telefoonnummer</h1>
@@ -18,12 +22,16 @@ include "includes\header.php";
         <p>06-34567891</p>
 </div>
 
+<br>
+
 <div>
     <h1>Adres</h1>
         <p>kaastraat 12</p>
         <p>1234 AH</p>
         <p>Amsterdam</p>
 </div>
+
+<br>
 
 <div>
     <h1>Namen</h1>
@@ -32,9 +40,10 @@ include "includes\header.php";
         <p>Sam Niehaus</p>
 </div>
 
-
 <?php
 
 include "includes/footer.php";
 
 ?>
+
+</html>
