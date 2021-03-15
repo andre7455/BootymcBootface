@@ -3,10 +3,10 @@
 class DatabaseConfig
 {
     // definieer Database Host, Gebruiker, Wachtwoord en Databasemaa,
-    private $host = "";
-    private $user = "";
+    private $host = "localhost";
+    private $user = "root";
     private $pwd = "";
-    private $dbName = "";
+    private $dbName = "boatymcboatface";
 
     public function connect()
     {
