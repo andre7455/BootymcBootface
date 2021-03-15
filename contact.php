@@ -6,7 +6,7 @@ include "includes\header.php";
 
 ?>
 
-<div>
+<div id="contactDiv">
     <h1>Email</h1>
         <p>marco@boatymcboatface.com</p>
         <p>andre@boatymcboatface.com</p>
@@ -15,7 +15,7 @@ include "includes\header.php";
 
 <br>
 
-<div>
+<div id="contactDiv">
     <h1>Telefoonnummer</h1>
         <p>06-12345678</p>
         <p>06-23456789</p>
@@ -24,7 +24,7 @@ include "includes\header.php";
 
 <br>
 
-<div>
+<div id="contactDiv">
     <h1>Adres</h1>
         <p>kaastraat 12</p>
         <p>1234 AH</p>
@@ -33,7 +33,7 @@ include "includes\header.php";
 
 <br>
 
-<div>
+<div id="contactDiv">
     <h1>Namen</h1>
         <p>Marco Bloemers</p>
         <p>Andre van der Lugt</p>
@@ -46,4 +46,3 @@ include "includes/footer.php";
 
 ?>
 
-</html>
