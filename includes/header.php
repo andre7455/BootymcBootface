@@ -1,3 +1,7 @@
+<?php 
+include "Modals/*";
+?>
+
 <!DOCTYPE html>
 <html>
   <head lang="nl_nNL">
@@ -14,9 +18,15 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Registreren</a>
-          <a class="nav-item nav-link" href="#">Inloggen</a>
+          <a class="nav-item nav-link" data-toggle="modal" data-target="#RegistreerModal">Registreren</a>
+          <a class="nav-item nav-link" data-toggle="modal" data-target="#LoginModal">Inloggen</a>
+          <a class="nav-item nav-link" href="contact.php">Contact</a>
+          <a class="nav-item nav-link" href="aboutus.php">About us</a>
           <a class="nav">
         </div>
       </div>
     </nav>
+
+<script>
+
+</script>
