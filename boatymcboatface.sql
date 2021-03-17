@@ -51,7 +51,8 @@ CREATE TABLE `gebruiker` (
   `Woonplaats` varchar(255) NOT NULL,
   `Postcode` varchar(255) NOT NULL,
   `Huisnummer` varchar(12) NOT NULL,
-  `Rol` int(10) NOT NULL
+  `Rol` int(10) NOT NULL,
+  `Wachtwoord` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
