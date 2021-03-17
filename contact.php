@@ -8,9 +8,11 @@ include "includes\header.php";
 
 <div id="contactDiv">
     <h1>Email</h1>
-        <p>marco@boatymcboatface.com</p>
-        <p>andre@boatymcboatface.com</p>
-        <p>sam@boatymcboatface.com</p>
+        <a href="mailto:marco@boatymcboatface.com">marco@boatymcboatface.com</a>
+        <br>
+        <a href="mailto:andre@boatymcboatface.com">andre@boatymcboatface.com</a>
+        <br>
+        <a href="mailto:sam@boatymcboatface.com">sam@boatymcboatface.com</a>
 </div>
 
 <br>
