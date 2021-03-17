@@ -1,14 +1,10 @@
-<?php 
-include "Modals/LoginModal.php";
-include "Modals/RegistreerModal.php";
-?>
-
 <!DOCTYPE html>
 <html>
   <head lang="nl_nNL">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/Main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,15 +14,11 @@ include "Modals/RegistreerModal.php";
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" data-toggle="modal" data-target="#LoginModal">Inloggen</a>
-          <a class="nav-item nav-link" data-toggle="modal" data-target="#RegistreerModal">Registreren</a>
+          <a class="nav-item nav-link" href="Login.php">Login</a>
+          <a class="nav-item nav-link" href="Registreer.php">Registreer</a>
           <a class="nav-item nav-link" href="contact.php">Contact</a>
           <a class="nav-item nav-link" href="aboutus.php">About us</a>
           <a class="nav">
         </div>
       </div>
     </nav>
-
-<script>
-
-</script>
