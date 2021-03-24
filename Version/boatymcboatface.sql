@@ -44,13 +44,8 @@ CREATE TABLE `boten` (
 
 CREATE TABLE `gebruiker` (
   `ID` int(255) NOT NULL,
-  `Naam` varchar(255) NOT NULL,
-  `Achternaam` varchar(255) NOT NULL,
-  `telefoonnummer` varchar(20) NOT NULL,
-  `Adres` varchar(255) NOT NULL,
-  `Woonplaats` varchar(255) NOT NULL,
-  `Postcode` varchar(255) NOT NULL,
-  `Huisnummer` varchar(12) NOT NULL,
+  `Username` varchar(255) NOT NULL,
+  `Email` varchar(255) NOT NULL,
   `Rol` int(10) NOT NULL,
   `Wachtwoord` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
