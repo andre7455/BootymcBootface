@@ -164,16 +164,19 @@
               <div class="r-auth-form">
                 <form action="RegistreerController.php" method="POST">
                   <div class="form-group">
-                    <input type="text" required class="form-control" placeholder="User name">
+                    <input type="text" required class="form-control" placeholder="User name" name="registreerUsername">
                   </div>
                   <div class="form-group">
-                    <input type="password" required class="form-control" placeholder="Password">
+                    <input type="password" required class="form-control" placeholder="Password"
+                      name="registreerPassword">
                   </div>
                   <div class="form-group">
-                    <input type="password" required class="form-control" placeholder="Confirm Password">
+                    <input type="password" required class="form-control" placeholder="Confirm Password"
+                      name="registreerPasswordConfirmed">
                   </div>
                   <div class="form-group">
-                    <input type="email" required class="form-control" placeholder="Email Address">
+                    <input type="email" required class="form-control" placeholder="Email Address"
+                      name="registreerEmail">
                   </div>
                   <div class="form-group">
                     <img src="assets/images/recaptcha.jpg" class="img-fluid d-block m-auto" alt="">
