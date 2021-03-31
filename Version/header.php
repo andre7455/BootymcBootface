@@ -18,8 +18,14 @@
         </div>
         <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
         <div class="r-header-action float-left">
-            <a href="login-register.php"> <img src="assets/images/icon-lock.png" alt='' /> <span class="black">Login</span></a>
-            <div class="r-search-wrapper">
+        <?php
+              if(!isset($_SESSION['userEmail'])){
+                  ?><a href="login-register.php"> <img src="assets/images/icon-lock.png" alt='' /> <span>Login</span></a><?php
+              }else{
+                ?><form action="LogoutController.php" method="POST">
+                  <button type=submit name="logout" class="btn btn-full">Logout</button></form><?php
+              }
+            ?>            <div class="r-search-wrapper">
             <div class="r-search-inner">
                 <form>
                 <input type="text" class="r-search-field" placeholder="Search" />

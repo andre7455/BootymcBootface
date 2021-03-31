@@ -22,6 +22,7 @@ if(isset($_POST["loginSubmit"])){
                 $_SESSION["username"] = $userRow[$i]['Username'];
                 $_SESSION["userRole"] = $userRow[$i]['Rol'];
                 header("Location: index.php");
+                unset($_POST["loginSubmit"]);
             }
             $i++;
             if ($i == $rowLength) {
@@ -34,3 +35,4 @@ if(isset($_POST["loginSubmit"])){
     }
     print_r("Er is iets fout gegaan, neem contact op met de systeembeheerder");
 }
+
