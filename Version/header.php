@@ -4,8 +4,7 @@
     <div class="row clearfix">
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
         <div class="r-logo">
-            <a href="#" class="d-inline-block"><img src="assets/images/logo-white.png" class="img-fluid d-block"
-                alt=""></a>
+            <a href="index.php" class="d-inline-block"><img src="assets/images/logo-white.png" class="img-fluid d-block"alt=""></a>
         </div>
         <a href="javaScript:void(0)" class="menu-icon"> <i class="fa fa-bars"></i> </a>
         </div>
@@ -35,12 +34,8 @@
                     <li><a href="faq.php">Faq</a></li>
                 </ul>
                 </li>
-                <li class="r-has-child">
+                <li >
                 <a href="boat-listing.php">BOATS</a>
-                <ul class="pl-0 ml-0">
-                    <li><a href="boat-list-map.php">Boat List Map</a></li>
-                    <li><a href="boat-booking.php">Boat Booking</a></li>
-                </ul>
                 </li> 
                 <li><a href="contact.php">CONTACT US</a></li>
             </ul>

@@ -43,21 +43,7 @@
     <i id="r-selector_icon" class="fa fa-cog"></i>
   </section>
   <div class="r-wrapper">
-  <header>
-    <div class="r-header r-header-inner r-header-strip-01">
-      <?php include 'header.php';?>
-          <div class="r-slider-item">
-            <img src="assets/images/main-slider-01.jpg" class="img-fluid d-block m-auto" alt="">
-            <div class="container">
-              <div class="r-slider-top-content">
-                <h1 class="animated fadeInDown">Kia Rio <span>z</span></h1>
-                <h4 class="animated fadeInLeft">FOR RENT <strong>$50</strong> PER DAY</h4>
-                <a href="#" class="btn btn-outlined animated fadeInUp"> Reserve Now </a>
-              </div>
-            </div>
-          </div>
-      </div>
-  </header>
+  <?php include "header.php" ?> 
     <section id="r-contact-part" class="r-contact-part">
       <div class="container clearfix">
         <div class="contact-head">
