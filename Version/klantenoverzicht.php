@@ -10,48 +10,59 @@ echo '<p>Beheer hier de klanten</p>';
 
 echo '<a href="klanttoevoegen.php" class="btn btn-primary">Add a customer</a>';
 
-$sql = "SELECT * FROM gebruiker";
-$result = $conn->query($sql);
+?>
 
-if ($result->num_rows > 0)
+<br>
+
+<?php
+
+$dbconfig = new DatabaseConfig;
+
+$userQuery = "SELECT * FROM gebruiker";
+    $userResult = $dbconfig->connect()->prepare($userQuery);
+    $userResult->execute(array());
+    $userRow = $userResult->setFetchMode(PDO::FETCH_ASSOC);
+    $userRow = $userResult->fetchAll();
+
+if (!empty($userRow))
 {
 
     echo '
     <table class="table">
         <thead>
             <tr>
-                <th>Naam</th>
-                <th>Achternaam</th>
-                <th>Tel.</th>
-                <th>Adres</th>
-                <th>Woonplaats</th>
-                <th>Postcode</th>
-                <th>Huisnummer</th>
+                <th>Username</th>
+                <th>Email</th>
                 <th>Rol</th>
             </tr>
         </thead>
         <tbody>
-    ';
+    '; 
 
     // output data of each row
-    while($row = $result->fetch_assoc()) 
-    {
-        //echo "Naam: " . $row["Naam"]. " - Achternaam: " . $row["Achternaam"]. " - Tel.: " . $row["telefoonnummer"]. ", Adres " . $row["Adres"]. ", Woonplaats " . $row["Woonplaats"]. ", Postcode " . $row["Postcode"]. ", Huisnummer " . $row["Huisnummer"]. ", Rol " . $row["Rol"]."<br>";
+    $i = 0;
+    $rowLength = count($userRow);
+    while ($i < $rowLength) {
+        $userprintName = $userRow[$i]["Username"];
+        $userprintEmail = $userRow[$i]["Email"];
+        $userprintRol = $userRow[$i]["Rol"];
+
+
+        echo "Username: " . $userprintName . " - Email: " . $userprintEmail . " - Rol: " . $userprintRol . "<br>";
         echo
         '
             <tr>
-                <td>' . $row["Naam"] . '</td>
-                <td>' . $row["Achternaam"] . '</td>
-                <td>' . $row["Tel."] . '</td>
-                <td>' . $row["Adres"] . '</td>
-                <td>' . $row["Woonplaats"] . '</td>
-                <td>' . $row["Postcode"] . '</td>
-                <td>' . $row["Huisnummer"] . '</td>
-                <td>' . $row["Rol"] . '</td>
-                <td><a href="admin_edit.php?id=' . $row['productnummer'] . '">change</a> <a href="admin_delete.php?id=' . $row['productnummer'] . '">delete</a></td>
+            <td>' . $userprintName . '</td>
+            <td>' . $userprintEmail . '</td>
+            <td>' . $userprintRol . '</td>
+                <td><a href="admin_edit.php?id='  . '">change</a> <a href="admin_delete.php?id='  . '">delete</a></td>
             </tr>
 
         ';
+        $i++;
+        if($i == $rowLength){
+            break;
+        }
     }
 
     echo
@@ -67,13 +78,7 @@ else
     echo "Geen gegevens in de database gevonden";
 }
 
-$conn->close();
 
-
-
-
-
-include 'includes/footer.php';
 
 ?>
 
