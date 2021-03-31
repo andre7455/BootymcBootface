@@ -18,4 +18,4 @@ if ($password === $passwordConfirmed) {
     $stmt->execute();
 }
 
-header("Location: index.html");
+header("Location: index.php");

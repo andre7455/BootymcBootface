@@ -3,11 +3,11 @@
 
 <head>
   <!-- PAGE TITLE -->
-  <title>Login-Register - Royal Cars</title>
+  <title>Home - CoralYachts</title>
 
   <!-- META-DATA -->
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -50,16 +50,15 @@
             <div class="row clearfix">
               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div class="r-logo">
-                  <a href="index.html" class="d-inline-block"><img src="assets/images/logo.png"
-                      class="img-fluid d-block" alt=""></a>
+                  <a href="index.php" class="d-inline-block"><img src="assets/images/logo.png" class="img-fluid d-block"
+                      alt=""></a>
                 </div>
                 <a href="javaScript:void(0)" class="menu-icon"> <i class="fa fa-bars"></i> </a>
               </div>
               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-12">
                 <div class="r-header-action float-right">
-                  <a href="login-register.html"> <img src="assets/images/icon-lock.png" alt='' /> <span>Login</span></a>
-                  <a href="#" class="r-search"> <img src="assets/images/icon-search.png" alt='' />
-                    <span>Search</span></a>
+                  <a href="login-register.php"> <img src="assets/images/icon-lock.png" alt='' /> <span>Login</span></a>
+
 
                   <div class="r-search-wrapper">
                     <div class="r-search-inner">
@@ -76,24 +75,15 @@
                   <nav>
                     <ul>
                       <li>
-                        <a href="index.html">HOME</a>
+                        <a href="index.php">HOME</a>
                       </li>
                       <li class="r-has-child">
-                        <a href="about.html">ABOUT US</a>
+                        <a href="about.php">ABOUT US</a>
                         <ul class="pl-0 ml-0">
-                          <li><a href="faq.html">Faq</a></li>
+                          <li><a href="faq.php">Faq</a></li>
                         </ul>
                       </li>
-                      <li class="r-has-child">
-                        <a href="car-listing.html">VEHICLES</a>
-                        <ul class="pl-0 ml-0">
-                          <li><a href="car-list-map.html">Car List Map</a></li>
-                          <li><a href="car-booking.html">Car Booking</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="gallery.html">GALLERY</a></li>
-                      <li><a href="drivers.html">DRIVERS</a></li>
-                      <li><a href="contact.html">CONTACT US</a></li>
+                      <li><a href="contact.php">CONTACT US</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -103,83 +93,44 @@
         </div>
         <div class="r-header-inner-banner">
           <div class="r-header-in-over">
-            <h1><b>Login or Register</b></h1>
+            <h1>Our <b>Shippers</b> </h1>
             <div class="r-breadcrum">
               <ul>
                 <li><a href="#">HOME</a></li>
-                <li><span>Login</span></li>
+                <li><span>SHIPPERS</span></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section id="r-login-register">
-      <div class="r-login-register">
-        <div class="r-login-register-in">
-          <div class="r-auth-or">
-            <span>OR</span>
-          </div>
-          <div class="clearfix">
-            <div class="r-auth-outer r-login">
-              <div class="r-auth-head">
-                <h2><b>Login</b> Now</h2>
-                <span>Login to our website</span>
-              </div>
-              <div class="r-auth-form">
-                <div class="r-login-fb">
-                  <a href="#"><img src="assets/images/fb.jpg" class="img-fluid d-block m-auto" alt=""></a>
-                </div>
-                <div class="r-or-line"><span>OR SIGN IN</span></div>
-                <form action="LoginController.php" method="POST">
-                  <div class="form-group">
-                    <input type="text" class="form-control" required placeholder="Email" name="loginEmail">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" required placeholder="Password" name="loginPassword">
-                  </div>
-                  <div class="form-group">
-                    <button class="btn btn-full" type="submit" name="loginSubmit">LOGIN NOW</button>
-                  </div>
-                </form>
-                <div class="r-from-inof">
-                  <p class="text-center">
-                    * Denotes mandatory field. <br>
-                    ** At least one telephone number is required.
-                  </p>
-                </div>
-              </div>
+    <section id="r-contact-part" class="r-contact-part">
+      <div class="container clearfix">
+        <div class="contact-head">
+          <span>OUR OFFICE</span>
+          <h2>Contact <b>CoralYachts</b> for<br> More Information. </h2>
+        </div>
+
+        <div class="row clearfix">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="r-contact-address">
+              <div class="head">Main Office</div>
+              <div class="r-contact-img"><img src="assets/images/contact-img01.jpg" class="img-fluid d-block m-auto"
+                  alt=""></div>
+              <div class="address address-cnt"><i class="fa fa-map-marker"></i><b>300</b> Pennsylvania EV, USA</div>
+              <div class="call address-cnt"><i class="fa fa-phone"></i><b>+100</b>-1212-2000</div>
+              <div class="mail address-cnt"><i class="fa fa-envelope"></i>info@coralyachts.com</div>
             </div>
-            <div class="r-auth-outer r-register">
-              <div class="r-auth-head">
-                <h2><b>Register</b> Now</h2>
-                <span>Required information for account creation</span>
-              </div>
-              <div class="r-auth-form">
-                <form action="RegistreerController.php" method="POST">
-                  <div class="form-group">
-                    <input type="text" required class="form-control" placeholder="User name" name="registreerUsername">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" required class="form-control" placeholder="Password"
-                      name="registreerPassword">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" required class="form-control" placeholder="Confirm Password"
-                      name="registreerPasswordConfirmed">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" required class="form-control" placeholder="Email Address"
-                      name="registreerEmail">
-                  </div>
-                  <div class="form-group">
-                    <img src="assets/images/recaptcha.jpg" class="img-fluid d-block m-auto" alt="">
-                  </div>
-                  <div class="form-group">
-                    <button class="btn btn-full" type="submit" name="registreerSubmit">SIGN UP NOW</button>
-                  </div>
-                </form>
-              </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="r-contact-address">
+              <div class="head">Other Office</div>
+              <div class="r-contact-img"><img src="assets/images/contact-img02.jpg" class="img-fluid d-block m-auto"
+                  alt=""></div>
+              <div class="address address-cnt"><i class="fa fa-map-marker"></i><b>300</b> Pennsylvania EV, USA</div>
+              <div class="call address-cnt"><i class="fa fa-phone"></i><b>+100</b>-1212-2000</div>
+              <div class="mail address-cnt"><i class="fa fa-envelope"></i>info@coralyachts.com</div>
             </div>
           </div>
         </div>
@@ -193,19 +144,21 @@
             <h2>Keep <b>In Touch.</b></h2>
           </div>
           <div class="r-get-form">
-            <form action="#" method="POST">
-              <div class="clearfix">
-                <div class="form-group"><input type="text" placeholder="User name"></div>
-                <div class="form-group"><input type="email" placeholder="Email Address"></div>
-              </div>
-              <div class="form-group"><input type="email" placeholder="Title Message"></div>
-              <div class="form-group">
-                <textarea placeholder="Message"></textarea>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-full">SEND MESSAGE NOW</button>
-              </div>
-            </form>
+            <div class="clearfix">
+              <div class="form-group"><input required="" name="userName" id="userName" type="text"
+                  placeholder="User name"></div>
+              <div class="form-group"><input required="" name="userEmail" id="userEmail" type="email"
+                  placeholder="Email Address"></div>
+            </div>
+            <div class="form-group"><input type="text" required="" name="subject" id="subject"
+                placeholder="Title Message"></div>
+            <div class="form-group">
+              <textarea placeholder="Message" name="content" required="" id="content"></textarea>
+            </div>
+            <div class="text-center">
+              <button onClick="sendContact();" class="btn btn-full">SEND MESSAGE NOW</button>
+            </div>
+            <div class="mt-4 text-uppercase text-white text-center" id="mail-status"></div>
           </div>
         </div>
       </div>
@@ -214,14 +167,14 @@
       <div class="r-footer">
         <div class="container">
           <div class="row clearfix">
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
               <div class="r-footer-block">
                 <img src="assets/images/footer-logo.png" class="d-block img-fluid" alt="">
                 <p>
-                  We know the difference is in the details and that’s why our car rental services, in the tourism and
+                  We know the difference is in the details and that’s why our boat rental services, in the tourism and
                   business industry, stand out for their quality.
                 </p>
-                <form method="POST">
+                <form action="#">
                   <div class="r-newsletter">
                     <input type="email" placeholder="Subscribe Newsletter">
                     <button class="btn"><i class="fa fa-envelope"></i></button>
@@ -229,7 +182,7 @@
                 </form>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
               <div class="r-footer-block">
                 <div class="r-footer-widget r-footer-phone">
                   <span><i class="fa fa-phone"></i> CALL US ON LINE 1</span>
@@ -249,7 +202,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
               <div class="r-footer-block">
                 <div class="r-footer-widget r-footer-phone">
                   <span><i class="fa fa-phone"></i> CALL US ON LINE 2</span>
@@ -259,20 +212,21 @@
                   <h6>OUR INFO</h6>
                   <nav>
                     <ul>
-                      <li><a href="#">About Royal Cars</a></li>
+                      <li><a href="#">About CoralYachts</a></li>
                       <li><a href="#">Our Mission & Strategy</a></li>
                       <li><a href="#">Our Vision</a></li>
-                      <li><a href="#">Royal Cars Advantages</a></li>
+                      <li><a href="#">CoralYachtsAdvantages</a></li>
                       <li><a href="#">Contact Us</a></li>
                     </ul>
                   </nav>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
               <div class="r-footer-block">
                 <div class="r-footer-widget r-footer-map">
-                  <a href="#"> <img src="assets/images/icon-footer-map.png" class="icon" alt='' /> RoyalCars on Map</a>
+                  <a href="#"> <img src="assets/images/icon-footer-map.png" class="icon" alt='' /> CoralYachts on
+                    Map</a>
                 </div>
                 <div class="r-footer-widget r-footer-nav">
                   <h6>ACCOUNT INFORMATION</h6>
@@ -290,10 +244,10 @@
             </div>
           </div>
           <div class="row clearfix r-footer-strip">
-            <div class="col-xl-6 col-lg-6 col-md-5 col-sm-4 col-xs-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
               ©2018 Created by jThemes Studio
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 col-xs-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <ul>
                 <li><a href="#"><i class="fa fa-facebook"></i>. <span>Facebook</span></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i>.<span>Twitter</span></a></li>
@@ -313,11 +267,42 @@
   <script src="assets/js/tether.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 
-  <!-- JQUERY:: PLUGINS -->
-  <script src="assets/js/plugins/owl/owl.carousel.min.js"></script>
-
   <!-- JQUERY:: CUSTOM -->
   <script src="assets/js/custom.js"></script>
+
+  <script>
+    function sendContact() {
+      var valid;
+      valid = validateContact();
+      if (valid) {
+        jQuery.ajax({
+          url: "contact_mail.php",
+          data: 'userName=' + $("#userName").val() + '&userEmail=' + $("#userEmail").val() + '&subject=' + $("#subject").val() + '&content=' + $(content).val(),
+          type: "POST",
+          success: function (data) {
+            $("#mail-status").html(data);
+          },
+          error: function () { }
+        });
+      }
+    }
+    function validateContact() {
+      var valid = true;
+      if (!$("#userName").val()) {
+        valid = false;
+      }
+      if (!$("#userEmail").val()) {
+        valid = false;
+      }
+      if (!$("#subject").val()) {
+        valid = false;
+      }
+      if (!$("#content").val()) {
+        valid = false;
+      }
+      return valid;
+    }
+  </script>
 
 </body>
 

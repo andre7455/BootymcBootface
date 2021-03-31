@@ -21,7 +21,7 @@ if(isset($_POST["loginSubmit"])){
                 $_SESSION["userEmail"] = $userRow[$i]['Email'];
                 $_SESSION["username"] = $userRow[$i]['Username'];
                 $_SESSION["userRole"] = $userRow[$i]['Rol'];
-                header("Location: index.html");
+                header("Location: index.php");
             }
             $i++;
             if ($i == $rowLength) {

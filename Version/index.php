@@ -60,7 +60,7 @@
               </div>
               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <div class="r-header-action float-left">
-                  <a href="login-register.html"> <img src="assets/images/icon-lock.png" alt='' /> <span>Login</span></a>
+                  <a href="login-register.php"> <img src="assets/images/icon-lock.png" alt='' /> <span>Login</span></a>
                   <div class="r-search-wrapper">
                     <div class="r-search-inner">
                       <form>
@@ -76,22 +76,22 @@
                   <nav>
                     <ul>
                       <li>
-                        <a href="index.html">HOME</a>
+                        <a href="index.php">HOME</a>
                       </li>
                       <li class="r-has-child">
-                        <a href="views/about.html">ABOUT US</a>
+                        <a href="about.php">ABOUT US</a>
                         <ul class="pl-0 ml-0">
-                          <li><a href="faq.html">Faq</a></li>
+                          <li><a href="faq.php">Faq</a></li>
                         </ul>
                       </li>
                       <li class="r-has-child">
-                        <a href="car-listing.html">BOATS</a>
+                        <a href="boat-listing.php">BOATS</a>
                         <ul class="pl-0 ml-0">
-                          <li><a href="car-list-map.html">Boat List Map</a></li>
-                          <li><a href="car-booking.html">Boat Booking</a></li>
+                          <li><a href="boat-list-map.php">Boat List Map</a></li>
+                          <li><a href="boat-booking.php">Boat Booking</a></li>
                         </ul>
                       </li> 
-                      <li><a href="contact.html">CONTACT US</a></li>
+                      <li><a href="contact.php">CONTACT US</a></li>
                     </ul>
                   </nav>
                 </div>

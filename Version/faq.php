@@ -48,13 +48,13 @@
                 <div class="row clearfix">
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
                     <div class="r-logo">
-                      <a href="index.html" class="d-inline-block"><img src="assets/images/logo.png" class="img-fluid d-block" alt=""></a>
+                      <a href="index.php" class="d-inline-block"><img src="assets/images/logo.png" class="img-fluid d-block" alt=""></a>
                     </div>
                     <a href="javaScript:void(0)" class="menu-icon"> <i class="fa fa-bars"></i> </a>
                   </div>
                   <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12"> 
                     <div class="r-header-action float-right">
-                      <a href="login-register.html"> <img src="assets/images/icon-lock.png" alt='' /> <span>Login</span></a>
+                      <a href="login-register.php"> <img src="assets/images/icon-lock.png" alt='' /> <span>Login</span></a>
                       <div class="r-search-wrapper">
                         <div class="r-search-inner">
                           <form>
@@ -70,16 +70,15 @@
                       <nav>
                         <ul>
                           <li>
-                            <a href="index.html">HOME</a>
+                            <a href="index.php">HOME</a>
                           </li>
                           <li class="r-has-child">
-                            <a href="about.html">ABOUT US</a>
+                            <a href="about.php">ABOUT US</a>
                             <ul class="pl-0 ml-0">
-                              <li><a href="faq.html">Faq</a></li>
+                              <li><a href="faq.php">Faq</a></li>
                             </ul>
                           </li>
-                          <li><a href="gallery.html">GALLERY</a></li>
-                          <li><a href="contact.html">CONTACT US</a></li>
+                          <li><a href="contact.htphpml">CONTACT US</a></li>
                         </ul>
                       </nav>
                     </div>
