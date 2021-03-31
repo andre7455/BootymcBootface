@@ -1,3 +1,11 @@
+<style>
+
+.black{
+    color: black !important;
+}
+
+</style>
+
 <div class="r-header r-header-inner r-header-strip-01">
 <div class="r-header-strip r-header-strip-01">
     <div class="container">
@@ -26,18 +34,18 @@
             <nav>
             <ul>
                 <li>
-                <a href="index.php">HOME</a>
+                <a class="black" href="index.php">HOME</a>
                 </li>
                 <li class="r-has-child">
-                <a href="about.php">ABOUT US</a>
+                <a class="black" href="about.php">ABOUT US</a>
                 <ul class="pl-0 ml-0">
-                    <li><a href="faq.php">Faq</a></li>
+                    <li><a class="black" href="faq.php">Faq</a></li>
                 </ul>
                 </li>
                 <li >
-                <a href="boat-listing.php">BOATS</a>
+                <a class="black" href="boat-listing.php">BOATS</a>
                 </li> 
-                <li><a href="contact.php">CONTACT US</a></li>
+                <li><a class="black" href="contact.php">CONTACT US</a></li>
             </ul>
             </nav>
         </div>
