@@ -26,6 +26,14 @@
 <body>
 <?php include 'header.php';?>
   
+<!-- code here-->
+  <div class="container">
+    
+  </div>
+
+
+
+
   <!-- JQUERY:: JQUERY.JS -->
   <script src="assets/js/jquery.min.js"></script>
 
