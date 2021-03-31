@@ -43,50 +43,18 @@
     <i id="r-selector_icon" class="fa fa-cog"></i>
   </section>
   <div class="r-wrapper">
-    <header>
-      <div class="r-header r-header-inner">
-        <div class="r-header-strip">
-          <div class="container">
-            <div class="row clearfix">
-              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <div class="r-logo">
-                  <a href="index.php" class="d-inline-block"><img src="assets/images/logo.png" class="img-fluid d-block"
-                      alt=""></a>
-                </div>
-                <a href="javaScript:void(0)" class="menu-icon"> <i class="fa fa-bars"></i> </a>
+  <header>
+      <div class="r-header r-header-inner r-header-strip-01">
+      <?php include 'header.php';?>
+          <div class="r-slider owl-carousel" id="defaultHomeSlider">
+          <div class="r-slider-item">
+            <img src="assets/images/main-slider-01.jpg" class="img-fluid d-block m-auto" alt="">
+            <div class="container">
+              <div class="r-slider-top-content">
+                <h1 class="animated fadeInDown">Kia Rio <span>z</span></h1>
+                <h4 class="animated fadeInLeft">FOR RENT <strong>$50</strong> PER DAY</h4>
+                <a href="#" class="btn btn-outlined animated fadeInUp"> Reserve Now </a>
               </div>
-              <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                <div class="r-header-action float-right">
-                  <a href="login-register.php"> <img src="assets/images/icon-lock.png" alt='' /> <span>Login</span></a>
-                </div>
-                <div class="r-nav-section float-right">
-                  <nav>
-                    <ul>
-                      <li>
-                        <a href="index.php">HOME</a>
-                      </li>
-                      <li class="r-has-child">
-                        <a href="about.php">ABOUT US</a>
-                        <ul class="pl-0 ml-0">
-                          <li><a href="faq.php">Faq</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.php">CONTACT US</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="r-header-inner-banner">
-          <div class="r-header-in-over">
-            <h1>Coral Yachts<b> Boats.</b> </h1>
-            <div class="r-breadcrum">
-              <ul>
-                <li><a href="#">HOME</a></li>
-                <li><span>BOATS</span></li>
-              </ul>
             </div>
           </div>
         </div>
