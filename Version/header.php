@@ -1,3 +1,4 @@
+<div class="r-header r-header-inner r-header-strip-01">
 <div class="r-header-strip r-header-strip-01">
     <div class="container">
     <div class="row clearfix">
@@ -48,4 +49,5 @@
         </div>
     </div>
     </div>
+</div>
 </div>
