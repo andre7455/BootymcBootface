@@ -1,9 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+ <!-- FAVICON -->
+  <link rel="shortcut icon" href="assets/images/favicon.png">
+
+<!-- CSS:: FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<!-- CSS:: MAIN -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" id="r-color-roller" href="assets/color-files/color-08.css">
+
 <?php
 
-$page_title = 'chance a product';
+$page_title = 'chance a customer';
 
-include 'includes/header.php';
-include 'includes/config.php';
+include "DatabaseConfig.php";
 
 $id = $_POST['productnumemr'];
 $naam = $_POST['naam'];

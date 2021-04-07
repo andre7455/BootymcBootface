@@ -65,7 +65,7 @@ if (!empty($userRow))
             <td>' . $userprintName . '</td>
             <td>' . $userprintEmail . '</td>
             <td>' . $userprintRol . '</td>
-                <td><a href="admin_edit.php?id='  . '">change</a> <a href="admin_delete.php?id='  . '">delete</a></td>
+                <td><a href="rolveranderen.php?id='  . '">change</a> <a href="klant-verwijderen.php?id='  . '">delete</a></td>
             </tr>
 
         ';
@@ -87,7 +87,5 @@ else
 {
     echo "Geen gegevens in de database gevonden";
 }
-
-
 
 ?>

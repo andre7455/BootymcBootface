@@ -1,13 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+ <!-- FAVICON -->
+  <link rel="shortcut icon" href="assets/images/favicon.png">
+
+<!-- CSS:: FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<!-- CSS:: MAIN -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" id="r-color-roller" href="assets/color-files/color-08.css">
+
 <?php
 
-$page_title = "edit this product";
+$page_title = "Admin - CoralYachts";
 
-include 'header.php';
+include "DatabaseConfig.php";
 
 echo '<h1>[Admin] CoralYachts</h1>';
 echo '<p>Here you can edit the customer you want</p>';
 
-$id = $_GET['customer'];
+echo '<a href="klantenoverzicht.php?id='  . '">back</a>';
+
+$dbconfig = new DatabaseConfig;
+
+$userQuery = "SELECT * FROM gebruiker";
+    $userResult = $dbconfig->connect()->prepare($userQuery);
+    $userResult->execute(array());
+    $userRow = $userResult->setFetchMode(PDO::FETCH_ASSOC);
+    $userRow = $userResult->fetchAll();
+
+$id = $_GET['gebruiker'];
 
 $sql = 'SELECT * FROM Rol WHERE Rol = "' . $Rol . '" LIMIT 1';
 
@@ -51,8 +74,3 @@ $row = $result->fetch_assoc();
 
 </form>
 
-
-<?php
-include 'includes/footer.php';
-
-?>
