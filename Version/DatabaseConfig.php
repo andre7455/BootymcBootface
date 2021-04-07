@@ -2,7 +2,7 @@
 
 class DatabaseConfig
 {
-    // definieer Database Host, Gebruiker, Wachtwoord en Databasemaa,
+    // definieer Database Host, Gebruiker, Wachtwoord en Databasenaam,
     private $host = "localhost";
     private $user = "root";
     private $pwd = "";
