@@ -1,9 +1,9 @@
 
- <?php
+<?php
 
 @session_start();
 
-echo $_SESSION["userEmail"];
+//echo $_SESSION["userEmail"];
 
 ?>
 
@@ -57,7 +57,7 @@ echo $_SESSION["userEmail"];
   <div class="r-wrapper">
     <header>
       <div class="r-header r-header-inner r-header-strip-01">
-        `<?php include 'header.php';?>`
+        <?php include 'header.php';?>
           <div class="r-slider owl-carousel" id="defaultHomeSlider">
           <div class="r-slider-item">
             <img src="assets/images/main-slider-01.jpg" class="img-fluid d-block m-auto" alt="">
