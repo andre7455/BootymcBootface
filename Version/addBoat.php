@@ -24,8 +24,9 @@
 </head>
 
  <body>
- <?php include 'header.php';
-      include 'DatabaseConfig.php'
+ <?php 
+    include 'header.php';
+    include 'DatabaseConfig.php'
 ?>
     <div class="border">
     <p class color="black" >test</p>
