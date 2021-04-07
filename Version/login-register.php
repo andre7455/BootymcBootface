@@ -61,10 +61,9 @@
                 <span>Login to our website</span>
               </div>
               <div class="r-auth-form">
-                <div class="r-login-fb">
-                  <a href="#"><img src="assets/images/fb.jpg" class="img-fluid d-block m-auto" alt=""></a>
-                </div>
-                <div class="r-or-line"><span>OR SIGN IN</span></div>
+
+
+                <!--- post to login controller --->
                 <form action="LoginController.php" method="POST">
                   <div class="form-group">
                     <input type="text" class="form-control" required placeholder="Email" name="loginEmail">
@@ -76,6 +75,8 @@
                     <button class="btn btn-full" type="submit" name="loginSubmit">LOGIN NOW</button>
                   </div>
                 </form>
+
+
                 <div class="r-from-inof">
                   <p class="text-center">
                     * Denotes mandatory field. <br>
@@ -90,6 +91,8 @@
                 <span>Required information for account creation</span>
               </div>
               <div class="r-auth-form">
+
+              <!-- form register controller -->
                 <form action="RegistreerController.php" method="POST">
                   <div class="form-group">
                     <input type="text" required class="form-control" placeholder="User name" name="registreerUsername">
@@ -107,12 +110,11 @@
                       name="registreerEmail">
                   </div>
                   <div class="form-group">
-                    <img src="assets/images/recaptcha.jpg" class="img-fluid d-block m-auto" alt="">
-                  </div>
-                  <div class="form-group">
                     <button class="btn btn-full" type="submit" name="registreerSubmit">SIGN UP NOW</button>
                   </div>
                 </form>
+
+                
               </div>
             </div>
           </div>
@@ -206,7 +208,7 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
               <div class="r-footer-block">
                 <div class="r-footer-widget r-footer-map">
-                  <a href="#"> <img src="assets/images/icon-footer-map.png" class="icon" alt='' /> RoyalCars on Map</a>
+                  <a href="#"> RoyalCars on Map</a>
                 </div>
                 <div class="r-footer-widget r-footer-nav">
                   <h6>ACCOUNT INFORMATION</h6>
