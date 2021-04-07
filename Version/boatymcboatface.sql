@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 17 feb 2021 om 12:56
--- Serverversie: 10.4.11-MariaDB
--- PHP-versie: 7.4.1
+-- Gegenereerd op: 07 apr 2021 om 14:31
+-- Serverversie: 10.4.14-MariaDB
+-- PHP-versie: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -31,10 +30,21 @@ SET time_zone = "+00:00";
 CREATE TABLE `boten` (
   `ID` int(255) NOT NULL,
   `Titel` varchar(255) NOT NULL,
-  `Beschijving` varchar(255) NOT NULL,
+  `Beschrijving` varchar(255) NOT NULL,
   `Locatie` varchar(255) NOT NULL,
-  `prijs` double NOT NULL
+  `Prijs` double NOT NULL,
+  `isRented` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `boten`
+--
+
+INSERT INTO `boten` (`ID`, `Titel`, `Beschrijving`, `Locatie`, `Prijs`, `isRented`) VALUES
+(1, 'Boot nummer Een!', 'Hele vette boot, de eerste, de koning', 'Deventer', 25, 1),
+(2, 'Boot nummer Twee!', 'Hele coole boot, de tweede, de prins', 'Deventer', 22.5, 1),
+(3, 'Boot nummer Drie!', 'Hele gave boot, de derde, de keizer', 'Apeldoorn', 30.75, 0),
+(4, 'Boot nummer Vier!', 'Hele nette boot, de vierde, de faraoh', 'Apeldoorn', 4.2, 0);
 
 -- --------------------------------------------------------
 
@@ -49,6 +59,15 @@ CREATE TABLE `gebruiker` (
   `Rol` int(10) NOT NULL,
   `Wachtwoord` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `gebruiker`
+--
+
+INSERT INTO `gebruiker` (`ID`, `Username`, `Email`, `Rol`, `Wachtwoord`) VALUES
+(9, 'sam', 'sam@sam', 0, '$2y$10$w.9uK2F4bX2vOG2mO5yR6eFvMAFSIqD4liTDLXfhufvDfratW96u2'),
+(10, 'hallop', 'ha@lo', 0, '$2y$10$AUOHY7ZQhEWHT6754y0KrOheoh9NQm8CZocbLek.iJtgTRYJztP..'),
+(11, 'kev', 'kev@in', 0, '$2y$10$GDJRU.zvASLF/phftzMmeO3vf.Gb/841Ts1Meb7Ecxab9rNdM4J42');
 
 -- --------------------------------------------------------
 
@@ -151,13 +170,13 @@ ALTER TABLE `rols`
 -- AUTO_INCREMENT voor een tabel `boten`
 --
 ALTER TABLE `boten`
-  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT voor een tabel `gebruiker`
 --
 ALTER TABLE `gebruiker`
-  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT voor een tabel `havens`
