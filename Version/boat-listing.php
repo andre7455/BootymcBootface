@@ -3,7 +3,7 @@
 
 <head>
   <!-- PAGE TITLE -->
-  <title>Home - CoralYachts</title>
+  <title>Boat listings - CoralYachts</title>
 
   <!-- META-DATA -->
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -36,7 +36,6 @@
   <div class="container">
     <div class="">
     <img src="" alt="">
-
     </div>
   </div>
 
@@ -50,6 +49,78 @@
   <script src="assets/js/tether.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <?php
+
+    $dbconfig = new DatabaseConfig;
+
+    $boatQuery = "SELECT * FROM boten";
+    $boatResult = $dbconfig->connect()->prepare($boatQuery);
+    $boatResult->execute(array());
+    $boatRow = $boatResult->setFetchMode(PDO::FETCH_ASSOC);
+    $boatRow = $boatResult->fetchAll();  
+    ?>
+
+
+  <table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Titel</th>
+      <th>Beschrijving</th>
+      <th>Locatie</th>
+      <th>Prijs</th>
+      <th>Reserveer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php 
+      if(!empty($boatRow)){
+        $i = 0;
+        $rowLength = count($boatRow);
+        while ($i < $rowLength) {
+          ?>
+          <tr>
+          <th scope="row"><?php echo $boatRow[$i]["ID"]?></th>
+          <td><?php echo $boatRow[$i]["Titel"] ?></td>
+          <td><?php echo $boatRow[$i]["Beschrijving"]?></td>
+          <td><?php echo $boatRow[$i]["Locatie"]?></td>
+          <td><?php echo $boatRow[$i]["Prijs"]?></td>
+          <?php
+          if($boatRow[$i]["isRented"] == 0){
+            ?>
+            <td><button onclick="reserveerMethod">reserveer</button></td>
+            <script>
+              function reserveerMethod(){
+                <?php
+                $sql = "UPDATE boten SET isRented = 1 WHERE ID = $i";
+
+                $stmt = $dbconfig->connect()->prepare($sql);
+                $stmt->execute();
+                ?>
+              }
+            </script>
+            <?php
+          }
+          ?>
+          </tr>
+          <?php
+          $i++;
+        }
+      }else{
+        echo "foutje oepsie woepsie uwu";
+      }
+    ?>
+  </tbody>
+</table>
+
 </body>
 
 </html>
+
+
