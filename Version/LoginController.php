@@ -29,7 +29,6 @@ if(isset($_POST["loginSubmit"])){
                 $_SESSION["userEmail"] = $userRow[$i]['Email'];
                 $_SESSION["username"] = $userRow[$i]['Username'];
                 $_SESSION["userRole"] = $userRow[$i]['Rol'];
-                $_SESSION["loggedIn"];
                 header("Location: index.php");
                 unset($_POST["loginSubmit"]);
             }
