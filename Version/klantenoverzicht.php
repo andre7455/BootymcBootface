@@ -1,14 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+ <!-- FAVICON -->
+  <link rel="shortcut icon" href="assets/images/favicon.png">
+
+<!-- CSS:: FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<!-- CSS:: MAIN -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" id="r-color-roller" href="assets/color-files/color-08.css">
+
 <?php
 
 $page_title = "Admin - CoralYachts";
 
-include "header.php";
+
 include "DatabaseConfig.php";
 
 echo '<h1>[ADMIN] CoralYachts </h1>';
 echo '<p>Beheer hier de klanten</p>';
-
-echo '<a href="klanttoevoegen.php" class="btn btn-primary">Add a customer</a>';
 
 ?>
 
@@ -48,7 +59,7 @@ if (!empty($userRow))
         $userprintRol = $userRow[$i]["Rol"];
 
 
-        echo "Username: " . $userprintName . " - Email: " . $userprintEmail . " - Rol: " . $userprintRol . "<br>";
+        //echo "Username: " . $userprintName . " - Email: " . $userprintEmail . " - Rol: " . $userprintRol . "<br>";
         echo
         '
             <tr>
@@ -79,7 +90,5 @@ else
 }
 
 
-
-?>
 
 ?>
