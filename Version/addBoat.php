@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php ?>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
@@ -23,33 +23,14 @@
 
 </head>
 
-<body>
-<?php include 'header.php';
+ <body>
+ <?php include 'header.php';
       include 'DatabaseConfig.php'
 ?>
-  
-<!-- code here-->
-<div class="d-flex flex-row-reverse">
- <a type="button" class="btn btn-primary" href="addBoat.php">Primary</a>
-</div>
-
-  <div class="container">
-    <div class="">
-    <img src="" alt="">
-
+    <div class="border">
+    <p class color="black" >test</p>
+        
     </div>
-  </div>
-
-
-
-
-  <!-- JQUERY:: JQUERY.JS -->
-  <script src="assets/js/jquery.min.js"></script>
-
-  <!-- JQUERY:: BOOTSTRAP.JS -->
-  <script src="assets/js/tether.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-
-</body>
-
+    </body>
+    
 </html>
