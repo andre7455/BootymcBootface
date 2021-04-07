@@ -42,7 +42,7 @@ if (!empty($userRow))
         <thead>
             <tr>
                 <th>Titel</th>
-                <th>Beschijving</th>
+                <th>Beschrijving</th>
                 <th>Locatie</th>
                 <th>Prijs</th>
             </tr>
@@ -66,7 +66,7 @@ if (!empty($userRow))
         '
             <tr>
             <td>' . $userprintTitel . '</td>
-            <td>' . $userprintBeschijving . '</td>
+            <td>' . $userprintBeschrijving . '</td>
             <td>' . $userprintLocatie . '</td>
             <td>' . $userprintPrijs . '</td>
                 <td><a href="botenverwijderen.php?id='  . '">delete</a></td>
