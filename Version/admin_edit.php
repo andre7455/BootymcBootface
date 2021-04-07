@@ -2,8 +2,7 @@
 
 $page_title = "edit this product";
 
-include 'includes/header.php';
-include 'includes/config.php';
+include 'header.php';
 
 echo '<h1>[Admin] CoralYachts</h1>';
 echo '<p>Here you can edit the customer you want</p>';
