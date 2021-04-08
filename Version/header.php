@@ -42,16 +42,28 @@
                 <li>
                 <a class="black" href="index.php">HOME</a>
                 </li>
-                <li class="r-has-child">
+                <li>
                 <a class="black" href="about.php">ABOUT US</a>
-                <ul class="pl-0 ml-0">
-                    <li><a class="black" href="faq.php">Faq</a></li>
-                </ul>
                 </li>
-                <li >
+                <li>
+                <a class="black" href="faq.php">FAQ</a>
+                </li>
+                <li>
                 <a class="black" href="boat-listing.php">BOATS</a>
                 </li> 
                 <li><a class="black" href="contact.php">CONTACT US</a></li>
+                <?php 
+                    if($_SESSION["userRole"] == 1){
+                        ?>
+                        <li><a class="black" href="havens-overzicht.php">HAVENS OVERZICHT</a></li>
+                        <li><a class="black" href="reserveringen.php">RESERVERINGEN</a></li>
+                        <li><a class="black" href="addBoat.php">BOTEN TOEVOEGEN</a></li>
+                        <li><a class="black" href="botenbeheren.php">BOTEN BEHEREN</a></li>
+                        <li><a class="black" href="klantenoverzicht.php">KLANTEN OVERZICHT</a></li>
+                        <li><a class="black" href="klanttoevoegen.php">KLANTEN TOEVOEGEN</a></li>
+                        <?php
+                    }
+                ?>
             </ul>
             </nav>
         </div>

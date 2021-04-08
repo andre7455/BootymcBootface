@@ -55,10 +55,10 @@
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="r-contact-address">
               <div class="head">Main Office</div>
-              <div class="r-contact-img"><img src="assets/images/contact-img01.jpg" class="img-fluid d-block m-auto"
+              <div class="r-contact-img"><img src="assets/Afbeeldingen/CYHQ.png" class="img-fluid d-block m-auto"
                   alt=""></div>
-              <div class="address address-cnt"><i class="fa fa-map-marker"></i><b>300</b> Pennsylvania EV, USA</div>
-              <div class="call address-cnt"><i class="fa fa-phone"></i><b>+100</b>-1212-2000</div>
+              <div class="address address-cnt"><i class="fa fa-map-marker"></i>Apeldoorn, Nederland</div>
+              <div class="call address-cnt"><i class="fa fa-phone"></i><b>+31</b>-1234-5678</div>
               <div class="mail address-cnt"><i class="fa fa-envelope"></i>info@coralyachts.com</div>
             </div>
           </div>
@@ -66,10 +66,10 @@
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="r-contact-address">
               <div class="head">Other Office</div>
-              <div class="r-contact-img"><img src="assets/images/contact-img02.jpg" class="img-fluid d-block m-auto"
+              <div class="r-contact-img"><img src="assets/Afbeeldingen/CYOO.png" class="img-fluid d-block m-auto"
                   alt=""></div>
-              <div class="address address-cnt"><i class="fa fa-map-marker"></i><b>300</b> Pennsylvania EV, USA</div>
-              <div class="call address-cnt"><i class="fa fa-phone"></i><b>+100</b>-1212-2000</div>
+              <div class="address address-cnt"><i class="fa fa-map-marker"></i>Deventer, Nederland</div>
+              <div class="call address-cnt"><i class="fa fa-phone"></i><b>+31</b>-1234-5678</div>
               <div class="mail address-cnt"><i class="fa fa-envelope"></i>info@coralyachts.com</div>
             </div>
           </div>
