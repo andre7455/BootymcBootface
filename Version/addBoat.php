@@ -30,7 +30,7 @@
 ?>
 <br><br><br><br><br><br>
 
-<form action="AddBoadController.php" method="POST">
+<form action="AddBoatController.php" method="POST">
   <div class="form-group">
     <label>Boat name</label>
     <input name="boatname" type="text" class="form-control" id="name" placeholder="Costa Concordia">
