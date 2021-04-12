@@ -23,7 +23,16 @@ echo '<p>Beheer hier de klanten</p>';
 ?>
 
 <br>
-
+<br>
+<br>
+<br>
+<br>
+<br>  
+<br>
+<br>
+<br>
+<br>
+<br>
 <?php
 
 $dbconfig = new DatabaseConfig;

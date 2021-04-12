@@ -23,6 +23,16 @@ echo '<p>Beheer hier de boten</p>';
 ?>
 
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <?php
 

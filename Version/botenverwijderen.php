@@ -23,7 +23,15 @@ echo '<p>Verwijder hier de boten</p>';
 ?>
 
 <br>
-
+<br>
+<br>
+<br>
+<br>  
+<br>
+<br>
+<br>
+<br>
+<br>
 <?php
 
 $dbconfig = new DatabaseConfig;
