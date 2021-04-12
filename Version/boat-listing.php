@@ -94,9 +94,6 @@
           <?php
           if($boatRow[$i]["isRented"] == 0){
             ?>
-<<<<<<< Updated upstream
-            <td><form method="ReserveerController.php" action="POST"><button class="btn btn-full" type="submit" name="reserveerButton" id="<?php $boatRow[$i]["ID"] ?>">reserveer</button></td>
-=======
             <td><button onclick="reserveerMethod">reserveer</button></td>
             <script>
               function reserveerMethod(){
@@ -110,7 +107,6 @@
                 ?>
               }
             </script>
->>>>>>> Stashed changes
             <?php
           }
           ?>
