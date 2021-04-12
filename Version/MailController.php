@@ -5,7 +5,7 @@
 	require "PHPMAILER-master/src/SMTP.php";
 	require "PHPMAILER-master/src/exception.php";
 	//deze function stuurt emails via google
-	function mailen(){
+	function mailen($email, $subject, $text){
 		$mail = new PHPMailer();
 
 		//verbinden met gmail
@@ -22,36 +22,13 @@
 		//email opstellen
 		$mail->isHTML(true);
 		$mail->SetFrom("CoralYachtsSamAndreMarco@gmail.com","Admin");
-		$mail->Subject = "hoi";
+		$mail->Subject = $subject;
 		$mail->ChatSet = "UTF-8";
-		$bericht = "<body style=\"font-family: Courier New, Courier; font-size: 14px; color: #000;\">je moeder</body></html>";
-		$mail->AddAddress("samjnbles@gmail.com", "Sam");
+		$bericht = "<body style=\"font-family: Courier New, Courier; font-size: 14px; color: #000;\">" . $text . "</body></html>";
+		$mail->AddAddress($email);
 		$mail->Body = $bericht;
 		//stuur mail
         $mail->Send();
 	}
-
-    try{
-        mailen(); 
-        echo "mad genius";
-
-        //header("Location: index.php");
-    }catch (PDOException $e) {
-        echo "ya fucked up";
-    }
-      
-      
-        /*
-        $email = $_POST["email"];
-        $subject = $_POST["subject"];
-        $text = $_POST["text"];
-      
-        try{
-          mailen(); 
-        }catch(PDOException $e){
-              echo $e;
-        }
-      */
-
       
 ?>

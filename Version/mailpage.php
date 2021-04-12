@@ -26,6 +26,7 @@
 <body>
 <?php 
   include 'header.php';
+  include 'MailController.php';
 ?>
   
 <!-- code here-->
@@ -58,13 +59,32 @@
   <br>
   <br>
 
-  <form name="MailForm" action="MailController.php" method="POST">
+  <form name="MailForm" action="" method="POST">
     <input type='text' name='email' id='email' placeholder='e-mail'/> <br>
     <input type='text' name='subject' id='subject' placeholder='subject'/> <br>
     <input type='text' name='text' id='text' placeholder='bericht'/> <br>
     <input type='submit' class="btn btn-primary" name='submitMail' id='submitMail' value='mail'/>
   </form>
 
-  </body>
+<?php
+
+//Dit zou moeten werken, nmaar doet het op een of andere reden niet. 
+//We hebben besloten om hier verder geen tijd aan te besteden.
+
+  if(isset($_POST["submitMail"])){
+    $email = $_POST["email"];
+    $subject = $_POST["subject"];
+    $text = $_POST["text"];
+  
+    try{
+      mailen($email, $subject, $text); 
+    }catch(Exception $e){
+      echo $e;
+    }
+  }
+
+?>
+
+</body>
 
 </html>    
