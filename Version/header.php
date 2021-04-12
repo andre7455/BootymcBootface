@@ -6,6 +6,10 @@
 
 </style>
 
+<?php
+@session_start();
+?>
+
 <div class="r-header r-header-inner r-header-strip-01">
 <div class="r-header-strip r-header-strip-01">
     <div class="container">
@@ -61,6 +65,7 @@
                         <li><a class="black" href="botenbeheren.php">BOTEN BEHEREN</a></li>
                         <li><a class="black" href="klantenoverzicht.php">KLANTEN OVERZICHT</a></li>
                         <li><a class="black" href="klanttoevoegen.php">KLANTEN TOEVOEGEN</a></li>
+                        <li><a class="black" href="mailpage.php">MAIL</a></li>
                         <?php
                     }
                 ?>
