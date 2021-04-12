@@ -8,8 +8,11 @@ $beschijving = $_POST["beschijving"];
 $locatie = $_POST["locatie"];
 $prijs = $_POST["prijs"];
 
-$sql = "INSERT INTO `boten`( `Titel`,`Beschijving`,`Locatie`,`prijs`) VALUES ('" . $name ."', '" . $beschijving ."', '". $locatie."', '". $prijs ."')";
+$sql = "INSERT INTO `boten`( `Titel`,`Beschrijving`,`Locatie`,`Prijs`) VALUES ('" . $name ."', '" . $beschijving ."', '". $locatie."', '". $prijs ."')";
 
 $stmt = $dbconfig->connect()->prepare($sql);
 $stmt->execute();
+
+header("Location: boat-listing.php");
 ?>
+

@@ -94,7 +94,23 @@
           <?php
           if($boatRow[$i]["isRented"] == 0){
             ?>
+<<<<<<< Updated upstream
             <td><form method="ReserveerController.php" action="POST"><button class="btn btn-full" type="submit" name="reserveerButton" id="<?php $boatRow[$i]["ID"] ?>">reserveer</button></td>
+=======
+            <td><button onclick="reserveerMethod">reserveer</button></td>
+            <script>
+              function reserveerMethod(){
+                <?php
+                $sql = "UPDATE boten SET isRented = 1 WHERE ID = $i";
+
+                $stmt = $dbconfig->connect()->prepare($sql);
+                $stmt->execute();
+
+                header("Location: boat-listing.php");
+                ?>
+              }
+            </script>
+>>>>>>> Stashed changes
             <?php
           }
           ?>
