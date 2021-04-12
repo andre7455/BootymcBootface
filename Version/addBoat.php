@@ -28,7 +28,7 @@
     include 'header.php';
     include 'DatabaseConfig.php'
 ?>
-<br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 
 <form action="AddBoatController.php" method="POST">
   <div class="form-group">
