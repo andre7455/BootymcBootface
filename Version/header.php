@@ -47,6 +47,7 @@
                 <li><a class="black" href="about.php">ABOUT US</a></li>
                 <li><a class="black" href="faq.php">FAQ</a></li>
                 <li><a class="black" href="contact.php">CONTACT US</a></li>
+                <li><a class="black" href="mailpage.php">MAIL</a></li>
                 <?php
                     if(isset($_SESSION["userEmail"])){
                         ?>
@@ -60,7 +61,6 @@
                         <li><a class="black" href="addBoat.php">BOTEN TOEVOEGEN</a></li>
                         <li><a class="black" href="botenbeheren.php">BOTEN BEHEREN</a></li>
                         <li><a class="black" href="klantenoverzicht.php">KLANTEN OVERZICHT</a></li>
-                        <li><a class="black" href="mailpage.php">MAIL</a></li>
                         <?php
                     }
                 ?>

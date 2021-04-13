@@ -59,18 +59,22 @@
   <br>
   <br>
 
+<!--
+  testform voor phpmailer
+
   <form name="MailForm" action="" method="POST">
-    <input type='text' name='email' id='email' placeholder='e-mail'/> <br>
-    <input type='text' name='subject' id='subject' placeholder='subject'/> <br>
-    <input type='text' name='text' id='text' placeholder='bericht'/> <br>
-    <input type='submit' class="btn btn-primary" name='submitMail' id='submitMail' value='mail'/>
+    <input type='text' name='email' id='email' placeholder='e-mail'> <br>
+    <input type='text' name='subject' id='subject' placeholder='subject'> <br>
+    <input type='text' name='text' id='text' placeholder='bericht'> <br>
+    <input type='submit' class="btn btn-primary" name='submitMail' id='submitMail' value='mail'>
   </form>
 
+-->
 <?php
 
 //Dit zou moeten werken, nmaar doet het op een of andere reden niet. 
-//We hebben besloten om hier verder geen tijd aan te besteden.
 
+/*
   if(isset($_POST["submitMail"])){
     $email = $_POST["email"];
     $subject = $_POST["subject"];
@@ -82,8 +86,19 @@
       echo $e;
     }
   }
+*/
 
 ?>
+
+<form name="MailForm" action="" method="POST">
+  <input type="text" name="naam" id="naam" class="form-control form-control-lg" placeholder="Uw naam"> 
+  <br>
+  <input type="text" name="onderwerp" id="onderwerp"  class="form-control form-control-lg" placeholder="Onderwerp"> 
+  <br>
+  <input type="text" name="tekst" id="tekst" class="form-control form-control-lg" placeholder="Typ hier uw bericht"> 
+  <br>
+  <input type="submit" class="btn btn-primary"  name="stuurMail" id="stuurMail" value="Stuur mail">
+</form>
 
 </body>
 
