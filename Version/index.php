@@ -258,51 +258,6 @@ $boatRow = $boatResult->fetchAll();
 </tbody>
 </table>
     
-    <section id="r-latest-news">
-      <div class="r-latest-news">
-        <div class="r-sec-head r-sec-head-b">
-          <span>ARTICLES FROM BLOG</span>
-          <h2>Our <b>Latest News.</b></h2>
-        </div>
-        <div class="container">
-          <div class="owl-carousel r-latest-news-list" id="r-latest-news-slider">
-            <div class="r-latest-news-single">
-              <a href="#" class="d-inline-block"><img src="assets/images/latest-news-01.jpg"
-                  class="img-fluid d-block m-auto" alt=""></a>
-              <div class="r-latest-news-content">
-                <span class="r-date">27 JUNE 2018</span>
-                <h4><a href="#">What To Do if Your Rental Boat Has Met With An Accident.</a></h4>
-                <a href="#" class="r-read-more">READ ARTICLE</a>
-              </div>
-            </div>
-
-            <div class="r-latest-news-single">
-              <a href="#" class="d-inline-block"><img src="assets/images/latest-news-02.jpg"
-                  class="img-fluid d-block m-auto" alt=""></a>
-              <div class="r-latest-news-content">
-                <span class="r-date">27 JUNE 2018</span>
-                <h4><a href="#">What To Do if Your Rental Boat Has Met With An Accident.</a></h4>
-                <a href="#" class="r-read-more">READ ARTICLE</a>
-              </div>
-            </div>
-
-            <div class="r-latest-news-single">
-              <a href="#" class="d-inline-block"><img src="assets/images/latest-news-03.jpg"
-                  class="img-fluid d-block m-auto" alt=""></a>
-              <div class="r-latest-news-content">
-                <span class="r-date">27 JUNE 2018</span>
-                <h4><a href="#">What To Do if Your Rental Boat Has Met With An Accident.</a></h4>
-                <a href="#" class="r-read-more">READ ARTICLE</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="r-follow-us text-center">
-          <img src="assets/images/instagram.png" class="img-fluid d-block m-auto" alt="">
-          <span>Follow Our Instagram <a href="#">#CoralYachts</a></span>
-        </div>
-      </div>
-    </section>
     <div id="r-gallery-part">
       <div class="r-gallery-part r-gallery-part-home pt-0 pb-0">
         <ul class="clearfix">
