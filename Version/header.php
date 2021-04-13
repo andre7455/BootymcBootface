@@ -64,7 +64,6 @@
                         <li><a class="black" href="addBoat.php">BOTEN TOEVOEGEN</a></li>
                         <li><a class="black" href="botenbeheren.php">BOTEN BEHEREN</a></li>
                         <li><a class="black" href="klantenoverzicht.php">KLANTEN OVERZICHT</a></li>
-                        <li><a class="black" href="klanttoevoegen.php">KLANTEN TOEVOEGEN</a></li>
                         <li><a class="black" href="mailpage.php">MAIL</a></li>
                         <?php
                     }

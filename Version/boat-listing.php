@@ -29,10 +29,6 @@
 ?>
   
 <!-- code here-->
-<div class="d-flex flex-row-reverse">
- <a type="button" class="btn btn-primary" href="addBoat.php">Primary</a>
-</div>
-
   <div class="container">
     <div class="">
     <img src="" alt="">

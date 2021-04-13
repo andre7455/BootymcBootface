@@ -16,10 +16,7 @@
 $page_title = "Admin - CoralYachts";
 
 include "DatabaseConfig.php";
-
-echo '<h1>[ADMIN] CoralYachts </h1>';
-echo '<p>Beheer hier de boten</p>';
-
+include "header.php";
 ?>
 
 <br>
