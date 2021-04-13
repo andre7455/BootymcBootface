@@ -72,7 +72,7 @@
   <thead>
     <tr>
       <th>#</th>
-      <th>Titel</th>
+      <th>Boot</th>
       <th>Beschrijving</th>
       <th>Locatie</th>
       <th>Prijs</th>
