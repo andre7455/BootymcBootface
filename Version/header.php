@@ -43,20 +43,16 @@
         <div class="r-nav-section float-right">
             <nav>
             <ul>
-                <li>
-                <a class="black" href="index.php">HOME</a>
-                </li>
-                <li>
-                <a class="black" href="about.php">ABOUT US</a>
-                </li>
-                <li>
-                <a class="black" href="faq.php">FAQ</a>
-                </li>
-                <li>
-                <a class="black" href="boat-listing.php">BOATS</a>
-                </li> 
+                <li><a class="black" href="index.php">HOME</a></li>
+                <li><a class="black" href="about.php">ABOUT US</a></li>
+                <li><a class="black" href="faq.php">FAQ</a></li>
                 <li><a class="black" href="contact.php">CONTACT US</a></li>
-                <?php 
+                <?php
+                    if(isset($_SESSION["userEmail"])){
+                        ?>
+                        <li><a class="black" href="boat-listing.php">BOATS</a></li> 
+                        <?php 
+                    }
                     if($_SESSION["userRole"] == 1){
                         ?>
                         <li><a class="black" href="havens-overzicht.php">HAVENS OVERZICHT</a></li>
