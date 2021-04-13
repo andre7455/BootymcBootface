@@ -3,8 +3,7 @@
 
 @session_start();
 
-//echo $_SESSION["userEmail"];
-
+include "DatabaseConfig.php";
 ?>
 
 <!DOCTYPE html>
@@ -36,24 +35,7 @@
 </head>
 
 <body>
-  <section id="r-customizer" class="r-customizer">
-    <div class="r-selector">
-      <span class="d-block text-center">Color Options</span>
-      <div class="r-color_section r-color_block">
-        <ul class="r-color_selector" id="r-color_selector">
-          <li class="r-color_1" data-attr="color-01"></li>
-          <li class="r-color_6" data-attr="color-06"></li>
-          <li class="r-color_2" data-attr="color-02"></li>
-          <li class="r-color_3" data-attr="color-03"></li>
-          <li class="r-color_4" data-attr="color-04"></li>
-          <li class="r-color_5" data-attr="color-05"></li>
-          <li class="r-color_7" data-attr="color-07"></li>
-          <li class="r-color_8" data-attr="color-08"></li>
-        </ul>
-      </div>
-    </div>
-    <i id="r-selector_icon" class="fa fa-cog"></i>
-  </section>
+  
   <div class="r-wrapper">
     <header>
       <div class="r-header r-header-inner r-header-strip-01">
@@ -63,9 +45,7 @@
             <img src="assets/images/main-slider-01.jpg" class="img-fluid d-block m-auto" alt="">
             <div class="container">
               <div class="r-slider-top-content">
-                <h1 class="animated fadeInDown">Kia Rio <span>z</span></h1>
-                <h4 class="animated fadeInLeft">FOR RENT <strong>$50</strong> PER DAY</h4>
-                <a href="#" class="btn btn-outlined animated fadeInUp"> Reserve Now </a>
+                <h1 class="animated fadeInDown">Boot 1</h1>
               </div>
             </div>
           </div>
@@ -73,9 +53,7 @@
             <img src="assets/images/main-slider-04.jpg" class="img-fluid d-block m-auto" alt="">
             <div class="container">
               <div class="r-slider-top-content">
-                <h1>BMW <span>3</span></h1>
-                <h4>FOR RENT <strong>$150</strong> PER DAY</h4>
-                <a href="#" class="btn btn-outlined"> Reserve Now </a>
+                <h1>Boot 2</h1>
               </div>
             </div>
           </div>
@@ -83,62 +61,13 @@
             <img src="assets/images/main-slider-05.jpg" class="img-fluid d-block m-auto" alt="">
             <div class="container">
               <div class="r-slider-top-content">
-                <h1>Audi <span>A4</span></h1>
-                <h4>FOR RENT <strong>$100</strong> PER DAY</h4>
-                <a href="#" class="btn btn-outlined"> Reserve Now </a>
+                <h1>Boot 3</h1>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="r-car-search">
-          <div class="container">
-            <div class="r-top-form-title animated fadeInUp">
-              <span>120+ BOATS TYPE & BRANDS</span>
-              <h3>Search Your <b>Best Boats.</b></h3>
-            </div>
-            <form>
-              <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                  <div class="form-group">
-                    <label> Boat Brand </label>
-                    <select class="form-control">
-                      <option>Any Brands</option>
-                      <option>Any Brands</option>
-                      <option>Any Brands</option>
-                      <option>Any Brands</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                  <div class="form-group">
-                    <label> Boat Type </label>
-                    <select class="form-control">
-                      <option>Any Type</option>
-                      <option>Any Type</option>
-                      <option>Any Type</option>
-                      <option>Any Type</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                  <div class="form-group">
-                    <label> Boat Price </label>
-                    <select class="form-control">
-                      <option>Price Low to High</option>
-                      <option>Price High to Low</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                  <div class="form-group">
-                    <input type="submit" class="form-control btn-primary" value="Search Car Now">
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+
       </div>
     </header>
     <section id="r-advantages-part" class="r-advantages-part">
@@ -236,22 +165,22 @@
                   <li data-target="#r-quote-carousel" data-slide-to="0">
                     <img class="img-fluid d-block" src="assets/images/user-02.jpg" alt="">
                     <span>
-                      <b>Kevin smit</b> <br>
-                      Docent Economie, team Creative Technologie, Aventus
+                      <b>Mohammed Kaya</b> <br>
+                      Docent, team Creative Technologie, Aventus
                     </span>
                   </li>
                   <li data-target="#r-quote-carousel" data-slide-to="1" class="active text-center">
                     <img class="img-fluid d-block" src="assets/images/user-01.png" alt="">
                     <span>
-                      <b>Kevin smit</b> <br>
-                      Docent Economie, team Creative Technologie, Aventus
+                      <b>Kevin Smit</b> <br>
+                      Docent, team Creative Technologie, Aventus
                     </span>
                   </li>
                   <li data-target="#r-quote-carousel" data-slide-to="2">
                     <img class="img-fluid d-block" src="assets/images/user-03.png" alt="">
                     <span>
-                      <b>Kevin smit</b> <br>
-                      Docent Economie, team Creative Technologie, Aventus
+                      <b>Kevin de Korte</b> <br>
+                      Docent, team Creative Technologie, Aventus
                     </span>
                   </li>
                 </ol>
@@ -262,319 +191,72 @@
       </div>
     </section>
 
-    <section id="r-faq-section">
-      <div class="r-faq-section r-faq-white-bg">
-        <div class="container">
-          <div class="row v-align-center r-faq-header-wrapper">
-            <div class="col-md-6 col-sm-12">
-              <div class="r-faq-header">
-                <span>FIND YOUR ANSWER HERE</span>
-                <h2>Frequenly <strong>Ask &amp; Questions.</strong></h2>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <ul class="nav nav-tabs r-faq-option-tab" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="faq-01-tab" data-toggle="tab" href="#faq-01" role="tab"
-                    aria-controls="faq-01" aria-selected="true"><i class="fa fa-user "></i>About account</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="faq-02-tab" data-toggle="tab" href="#faq-02" role="tab" aria-controls="faq-02"
-                    aria-selected="false"><i class="fa fa-question-circle"></i>Technical support</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="faq-03-tab" data-toggle="tab" href="#faq-03" role="tab" aria-controls="faq-03"
-                    aria-selected="false"><i class="fa fa-car"></i>Boat Features</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tab-content" id="myTabContent-01">
-            <div class="tab-pane fade show active" id="faq-01" role="tabpanel" aria-labelledby="faq-01-tab">
-              <div class="row r-faq-accordion-wrapper">
-                <div class="col-lg-6 col-md-12">
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      How to reserved a boat here?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      How can i drop the rental boat?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      What happen if i crash the boat?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      How can i select a boat rent?
-                    </div>
-                    <div class="r-accordion-body" style="display: none;">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      Do you have VIP access to airport?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      What happen if i crash the boat?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="faq-02" role="tabpanel" aria-labelledby="faq-02-tab">
-              <div class="row r-faq-accordion-wrapper">
-                <div class="col-lg-6 col-md-12">
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      How can i select a boat rent?
-                    </div>
-                    <div class="r-accordion-body" style="display: none;">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      Do you have VIP access to airport?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      What happen if i crash the boat?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      How to reserved a boat here?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      How can i drop the rental boat?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      What happen if i crash the boat?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="faq-03" role="tabpanel" aria-labelledby="faq-03-tab">
-              <div class="row r-faq-accordion-wrapper">
-                <div class="col-lg-6 col-md-12">
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      How can i drop the rental boat?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      What happen if i crash the boat?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      How to reserved a boat here?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      Do you have VIP access to airport?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      What happen if i crash the boat?
-                    </div>
-                    <div class="r-accordion-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                  <div class="r-accordion">
-                    <div class="r-accordion-heading">
-                      <span class="r-accordion-toggle">
-                        <i class="fa-arrow-circle-down fa"></i>
-                      </span>
-                      How can i select a boat rent?
-                    </div>
-                    <div class="r-accordion-body" style="display: none;">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo.
-                      </p>
-                    </div>
-                  </div> <!-- /r-accordion -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <a href="#" class="btn-primary icon-btn"> <i class="fa fa-question-circle icon"></i> MAKE A QUESTIONS </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <?php
+
+$dbconfig = new DatabaseConfig;
+
+$boatQuery = "SELECT * FROM boten";
+$boatResult = $dbconfig->connect()->prepare($boatQuery);
+$boatResult->execute(array());
+$boatRow = $boatResult->setFetchMode(PDO::FETCH_ASSOC);
+$boatRow = $boatResult->fetchAll();  
+?>
+
+<h1>Huur een boot!</h1>
+
+<table class="table">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Boot</th>
+  <th>Beschrijving</th>
+  <th>Locatie</th>
+  <th>Prijs</th>
+  <th>Reserveer</th>
+</tr>
+</thead>
+<tbody>
+<?php 
+  if(!empty($boatRow)){
+    $i = 0;
+    $rowLength = count($boatRow);
+    while ($i < $rowLength) {
+      ?>
+      <tr>
+      <th scope="row"><?php echo $boatRow[$i]["ID"]?></th>
+      <td><?php echo $boatRow[$i]["Titel"] ?></td>
+      <td><?php echo $boatRow[$i]["Beschrijving"]?></td>
+      <td><?php echo $boatRow[$i]["Locatie"]?></td>
+      <td><?php echo $boatRow[$i]["Prijs"]?></td>
+      <?php
+      if($boatRow[$i]["isRented"] == 0){
+        ?>
+        <td><button onclick="reserveerMethod">reserveer</button></td>
+        <script>
+          function reserveerMethod(){
+            <?php
+            $sql = "UPDATE boten SET isRented = 1 WHERE ID = $i";
+
+            $stmt = $dbconfig->connect()->prepare($sql);
+            $stmt->execute();
+
+            header("Location: boat-listing.php");
+            ?>
+          }
+        </script>
+        <?php
+      }
+      ?>
+      </tr>
+      <?php
+      $i++;
+    }
+  }else{
+    echo "foutje oepsie woepsie uwu";
+  }
+?>
+</tbody>
+</table>
     
     <section id="r-latest-news">
       <div class="r-latest-news">
