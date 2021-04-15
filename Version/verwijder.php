@@ -16,15 +16,17 @@
 $page_title = "Admin - CoralYachts";
 
 include "DatabaseConfig.php";
-include "header.php";
+
+echo '<h1>[ADMIN] CoralYachts </h1>';
+echo '<p>Verwijder hier de boten</p>';
+
 ?>
 
 <br>
 <br>
 <br>
 <br>
-<br>
-<br>
+<br>  
 <br>
 <br>
 <br>
@@ -42,24 +44,8 @@ $userQuery = "SELECT * FROM boten";
     $userRow = $userResult->fetchAll();
 
 if (!empty($userRow))
-{
 
-    echo '
-    <table class="table">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Titel</th>
-                <th>Beschijving</th>
-                <th>Locatie</th>
-                <th>Prijs</th>
-            </tr>
-        </thead>
-        <tbody>
-    '; 
-
-    // output data of each row
-    $i = 0;
+$i = 0;
     $rowLength = count($userRow);
     while ($i < $rowLength) {
         $userprintID = $userRow[$i]["ID"];
@@ -68,38 +54,24 @@ if (!empty($userRow))
         $userprintLocatie = $userRow[$i]["Locatie"];
         $userprintPrijs = $userRow[$i]["Prijs"];
 
-
-
-        //echo "Username: " . $userprintName . " - Email: " . $userprintEmail . " - Rol: " . $userprintRol . "<br>";
-        echo
-        '
-            <tr>
-            <td>' . $userprintID . '</td>
-            <td>' . $userprintTitel . '</td>
-            <td>' . $userprintBeschrijving . '</td>
-            <td>' . $userprintLocatie . '</td>
-            <td>' . $userprintPrijs . '</td>
-                <td><a href="delete.php?id='  . '">delete</a></td>
-            </tr>
-
-        ';
         $i++;
         if($i == $rowLength){
             break;
         }
     }
 
-    echo
-    '
-        </body>
-    </table>
-    ';
 
-}
+$id = $_POST['id'];
 
-else
+$sql = 'DELETE FROM boten WHERE id ="' . $id . '"';
+
+if( $conn->query( $sql ))
 {
-    echo "Geen gegevens in de database gevonden";
+    echo "<p>De boot is verwijderd</p>";
 }
+    else
+    {
+        echo "<p>De boot is niet verwijderd</p>";
+    }
 
 ?>
