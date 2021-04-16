@@ -24,7 +24,7 @@
   <body>
        
       <div class="r-wrapper">
-      <?php include 'header.php';?>
+      <?php include "header.php";?>
 
         <section class="r-faq-section">
             <div class="container">

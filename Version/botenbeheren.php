@@ -19,17 +19,7 @@ include "DatabaseConfig.php";
 include "header.php";
 ?>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<br><br><br><br><br><br><br><br><br><br><br>
 
 <?php
 
@@ -43,7 +33,6 @@ $userQuery = "SELECT * FROM boten";
 
 if (!empty($userRow))
 {
-
     echo '
     <table class="table">
         <thead>
@@ -56,29 +45,31 @@ if (!empty($userRow))
         </thead>
         <tbody>
     '; 
-
     // output data of each row
     $i = 0;
     $rowLength = count($userRow);
     while ($i < $rowLength) {
+        /*dit hele stuk is redundant en erg verwarrent voor een andre
+
+        $userprintID = $userRow[$i]["ID"];
         $userprintTitel = $userRow[$i]["Titel"];
         $userprintBeschrijving = $userRow[$i]["Beschrijving"];
         $userprintLocatie = $userRow[$i]["Locatie"];
         $userprintPrijs = $userRow[$i]["Prijs"];
-
+        */
 
 
         //echo "Username: " . $userprintName . " - Email: " . $userprintEmail . " - Rol: " . $userprintRol . "<br>";
         echo
         '
             <tr>
-            <td>' . $userprintTitel . '</td>
-            <td>' . $userprintBeschrijving . '</td>
-            <td>' . $userprintLocatie . '</td>
-            <td>' . $userprintPrijs . '</td>
-                <td><a href="botenverwijderen.php?id='  . '">delete</a></td>
+            <td>' . $userRow[$i]["Titel"] . '</td>
+            <td>' . $userRow[$i]["Beschrijving"] . '</td>
+            <td>' . $userRow[$i]["Locatie"] . '</td>
+            <td>' . $userRow[$i]["Prijs"] . '</td>
+            <td><a href="deleteboatcontroller.php?id=' . $userRow[$i]["ID"] . '">delete</a></td>
+            <td><a href="changeboat.php?id=' . $userRow[$i]["ID"] . '">change</a></td>
             </tr>
-
         ';
         $i++;
         if($i == $rowLength){

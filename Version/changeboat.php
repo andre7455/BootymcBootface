@@ -26,14 +26,32 @@
  <body>
  <?php 
     include "header.php";
-    include 'DatabaseConfig.php'
-?>
+    include 'DatabaseConfig.php';
+    $id = htmlspecialchars($_GET["id"]);
+    
+
+    $dbconfig = new DatabaseConfig;
+
+    $userQuery = "SELECT FROM `boten` WHERE `boten`.`ID` = $id";
+        $userResult = $dbconfig->connect()->prepare($userQuery);
+        $userResult->execute(array());
+        $userRow = $userResult->setFetchMode(PDO::FETCH_ASSOC);
+        $userRow = $userResult->fetchAll();
+if (!empty($userRow))
+{
+    header("Location: https://www.dafk.net/what/");
+}
+
+
+echo '
 <br><br><br><br><br><br><br><br><br><br>
 
-<form action="AddBoatController.php" method="POST">
+
+
+<form action="changeboatcontroller.php" method="POST">
   <div class="form-group">
     <label>Boat name</label>
-    <input name="boatname" type="text" class="form-control" id="name" placeholder="Costa Concordia">
+    <input name="boatname" type="text" class="form-control" id="name" value= '. $userRow[1] .'>
   </div>
 
   <div class="form-group">
@@ -53,6 +71,8 @@
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+';
 
+?>
 </body>
 
