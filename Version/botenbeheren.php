@@ -48,7 +48,6 @@ if (!empty($userRow))
     <table class="table">
         <thead>
             <tr>
-                <th>ID</th>
                 <th>Titel</th>
                 <th>Beschijving</th>
                 <th>Locatie</th>
@@ -62,7 +61,6 @@ if (!empty($userRow))
     $i = 0;
     $rowLength = count($userRow);
     while ($i < $rowLength) {
-        $userprintID = $userRow[$i]["ID"];
         $userprintTitel = $userRow[$i]["Titel"];
         $userprintBeschrijving = $userRow[$i]["Beschrijving"];
         $userprintLocatie = $userRow[$i]["Locatie"];
@@ -74,12 +72,11 @@ if (!empty($userRow))
         echo
         '
             <tr>
-            <td>' . $userprintID . '</td>
             <td>' . $userprintTitel . '</td>
             <td>' . $userprintBeschrijving . '</td>
             <td>' . $userprintLocatie . '</td>
             <td>' . $userprintPrijs . '</td>
-                <td><a href="delete.php?id='  . '">delete</a></td>
+                <td><a href="botenverwijderen.php?id='  . '">delete</a></td>
             </tr>
 
         ';
