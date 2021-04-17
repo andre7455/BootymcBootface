@@ -37,6 +37,8 @@
         $userResult->execute(array());
         $userRow = $userResult->setFetchMode(PDO::FETCH_ASSOC);
         $userRow = $userResult->fetchAll();
+
+        // sam als je hier naar kijkt, het enige wat ik wil is de value defineren in de input vakken met de dingen die worden opgehaald. maar ik kom er absoluut niet uit 
 if (!empty($userRow))
 {
     header("Location: https://www.dafk.net/what/");
@@ -51,6 +53,8 @@ echo '
 <form action="changeboatcontroller.php" method="POST">
   <div class="form-group">
     <label>Boat name</label>
+
+  
     <input name="boatname" type="text" class="form-control" id="name" value= '. $userRow[1] .'>
   </div>
 

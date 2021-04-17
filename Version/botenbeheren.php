@@ -14,7 +14,6 @@
 <?php
 
 $page_title = "Admin - CoralYachts";
-
 include "DatabaseConfig.php";
 include "header.php";
 ?>
