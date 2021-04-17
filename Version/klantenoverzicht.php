@@ -16,10 +16,7 @@
 $page_title = "Admin - CoralYachts";
 
 include "DatabaseConfig.php";
-
-echo '<h1>[ADMIN] CoralYachts </h1>';
-echo '<p>Beheer hier de klanten</p>';
-
+include "header.php";
 ?>
 
 <br>
@@ -62,19 +59,23 @@ if (!empty($userRow))
     $i = 0;
     $rowLength = count($userRow);
     while ($i < $rowLength) {
-        $userprintName = $userRow[$i]["Username"];
-        $userprintEmail = $userRow[$i]["Email"];
-        $userprintRol = $userRow[$i]["Rol"];
+        /*
+        het is niet nodig om gegevens in een var te zetten en vervolgens alleen te printen je kan ook direct de gegevens printen.
 
+        $userprintName = 
+        $userprintEmail = 
+        $userprintRol = 
+        */
 
         //echo "Username: " . $userprintName . " - Email: " . $userprintEmail . " - Rol: " . $userprintRol . "<br>";
         echo
         '
             <tr>
-            <td>' . $userprintName . '</td>
-            <td>' . $userprintEmail . '</td>
-            <td>' . $userprintRol . '</td>
-                <td><a href="rolveranderen.php?id='  . '">change</a> <a href="klant-verwijderen.php?id='  . '">delete</a></td>
+            <td>' . $userRow[$i]["Username"] . '</td>
+            <td>' . $userRow[$i]["Email"] . '</td>
+            <td>' . $userRow[$i]["Rol"] . '</td>
+            <td><a href="adminKlantController.php?id=' . $userRow[$i]["ID"] . '">make admin</a></td> 
+            <td><a href="deleteKlantController.php?id=' . $userRow[$i]["ID"] . '">delete</a></td> 
             </tr>
 
         ';
