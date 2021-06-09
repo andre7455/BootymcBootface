@@ -60,17 +60,17 @@ echo '
 
   <div class="form-group">
     <label>Beschijving</label>
-    <textarea name="beschijving" class="form-control" value= '. $userRow[0]["Beschrijving"] .' placeholder="A spectre is haunting Europe — the spectre of communism. All the powers of old Europe have entered into a holy alliance to exorcise this spectre: Pope and Tsar, Metternich and Guizot, French Radicals and German police-spies."></textarea>
+    <textarea name="beschijving" class="form-control" value= '. $userRow[0]["Beschrijving"] .'></textarea>
   </div>
 
   <div class="form-group">
     <label for="">locatie</label>
-    <input name="locatie" type="text" class="form-control" value= '. $userRow[0]["Locatie"] .' name="locatie" id="locatie" placeholder="pyongyang">
+    <input name="locatie" type="text" class="form-control" name="locatie" id="locatie" value= '. $userRow[0]["Locatie"] .'>
   </div>
 
   <div class="form-group">
     <label>prijs</label>
-    <input name="prijs" type="text" class="form-control" value= '. $userRow[0]["Prijs"] .' id="prijs" placeholder="599,00">
+    <input name="prijs" type="text" class="form-control" id="prijs" value= '. $userRow[0]["Prijs"] .'>
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
