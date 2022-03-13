@@ -1,5 +1,4 @@
 <?php 
-
 class DatabaseConfig
 {
     // definieer Database Host, Gebruiker, Wachtwoord en Databasenaam,
